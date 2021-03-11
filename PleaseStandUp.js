@@ -5,6 +5,9 @@ class PleaseStandUp {
     return the age of a person with the date as their birthday.
     (ie. if birthday = June 22, 1996 then the output should be 24)
     */
+    //input date of birth 
+    //then input the year
+    //return current age
 
    howOld(birthday){
         return -1;
@@ -17,8 +20,21 @@ class PleaseStandUp {
     minutes, and seconds with colons.
     */
 
-    timeConvert(numOfMins){
-        return -1;
+    //find the amount of seconds in a hour, 3600 sec in 1hr
+    // then seconds by the minute, 60 sec in 1min
+    // then calculate remainding seconds
+
+timeConvert(numOfMins){
+    // divide hrs by 60
+    let hours = Math.floor(num/60);
+    // calculate remainder of minutes
+    let minutes = num % 60;
+    // Remainder is seconds. Multiply by 60
+    let seconds = minutes % 60
+    // display results hrs:min
+    return = (hours + ':' + minutes + ":" + seconds);
     }
 
 }
+
+module.exports = PleaseStandUp;
